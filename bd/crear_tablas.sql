@@ -1,27 +1,24 @@
-use arciBD;
-CREATE TABLE usuario (
+USE arcibd;
+CREATE TABLE IF NOT EXISTS usuario (
     id_usuario INT NOT NULL AUTO_INCREMENT,
     correo VARCHAR(100),
     contrasena VARCHAR(100),
     PRIMARY KEY (id_usuario)
 );
-CREATE TABLE datos_generales(
-	Id_correo VARCHAR (50),
-    Nombre VARCHAR (50),
-	Apellido1 VARCHAR (30),
-	Apellido2 VARCHAR (30),
-	Telefono INT (30),
-	PRIMARY KEY (Id_correo),
-    FOREIGN KEY(Id_correo) REFERENCES usuario(correo)
+CREATE TABLE IF NOT EXISTS datos_generales(
+	id_correo VARCHAR (100),
+    nombre VARCHAR (50),
+	apellido1 VARCHAR (30),
+	apellido2 VARCHAR (30),
+	telefono INT (30),
+	PRIMARY KEY (id_correo)
 );
 
 
-CREATE TABLE comentarios(
+CREATE TABLE IF NOT EXISTS comentarios(
 	id_nombre VARCHAR (30),
 	comen VARCHAR (50),
-	correo_contacto VARCHAR (30),
+	correo_contacto VARCHAR (100),
 	telefono INT (30),
-	PRIMARY KEY (id_nombre),
-    FOREIGN KEY(Correo_contacto) REFERENCES usuario(correo),
-    FOREIGN KEY(id_nombre) REFERENCES datos_generales(Nombre)
+	PRIMARY KEY (id_nombre)
 );
