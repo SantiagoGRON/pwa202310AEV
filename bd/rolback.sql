@@ -1,0 +1,3 @@
+use dbarci
+
+TRUNCATE TABLE 

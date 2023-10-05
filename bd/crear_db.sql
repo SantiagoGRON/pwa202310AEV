@@ -1,1 +1,1 @@
-CREATE database arciBD
+CREATE database arciBD CHARACTER SET utf8 COLLATE uft8_unicode_ci;
