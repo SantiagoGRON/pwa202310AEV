@@ -1,21 +1,18 @@
 <script setup>
     import TheHeader from '@/components/TheHeader.vue';
-    import Thefooter from '@/components/TheFooter.vue';
 </script>
 
 <template>
+    <TheHeader />
     <main>
-        <TheHeader/>
         <body>
             <div class="showcase">
-                <h2>Equipo 3</h2>
-                <ul>
-                    <li>Santiago Garcia Rivera</li>
-                    <li>Marco Antonio Contreras Gonzalez</li>
-                </ul>
+                <h1>Inicio de sesion</h1>
+                <p>Inresar datos:</p>
+                <input type="text" name="Nombres" placeholder="Email">
+                <input type="text" name="pass" placeholder="Contraseña">
             </div>
         </body>
-        <Thefooter/>
     </main>
 </template>
 
@@ -27,7 +24,6 @@
         background-attachment: fixed;
         background-size: 100% 100%;
     }
-
     .showcase {
         background-color: aqua;
         height: auto;
@@ -38,5 +34,18 @@
         background-repeat: no-repeat;
         background-size: cover;
         opacity: .6;
+    }
+    input {
+        border: none;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+        background-color: #a1d1f5;
+        color: #64696d;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        margin-bottom: 30px;
     }
 </style>

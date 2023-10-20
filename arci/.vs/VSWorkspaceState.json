@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\assets\\icons",
+    "\\src\\components",
+    "\\src\\router",
     "\\src\\views"
   ],
-  "SelectedNode": "\\src\\views\\HomeView.vue",
+  "SelectedNode": "\\src\\App.vue",
   "PreviewInSolutionExplorer": false
 }

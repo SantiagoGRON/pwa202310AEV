@@ -1,26 +1,25 @@
 <script setup>
     import TheHeader from '@/components/TheHeader.vue';
-    import Thefooter from '@/components/TheFooter.vue';
 </script>
 
 <template>
+    <TheHeader />
     <main>
-        <TheHeader/>
         <body>
             <div class="showcase">
-                <h2>Equipo 3</h2>
-                <ul>
-                    <li>Santiago Garcia Rivera</li>
-                    <li>Marco Antonio Contreras Gonzalez</li>
-                </ul>
+                <h1>Registrarse</h1>
+                <p>Inresar datos:</p>
+                <input type="text" name="text" placeholder="Nombre">
+                <input type="text" name="Nombres" placeholder="Email">
+                <input type="text" name="pass" placeholder="Contrasena">
             </div>
         </body>
-        <Thefooter/>
+
     </main>
 </template>
 
 <style scoped>
-    body {
+    main {
         background-color: blue;
         background-image: url('https://gifdb.com/images/high/club-penguin-dance-200-x-200-gif-znfusk83270n036o.gif');
         background-repeat: no-repeat;
@@ -38,5 +37,19 @@
         background-repeat: no-repeat;
         background-size: cover;
         opacity: .6;
+    }
+
+    input {
+        border: none;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+        background-color: #a1d1f5;
+        color: #64696d;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        margin-bottom: 30px;
     }
 </style>
