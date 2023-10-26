@@ -29,7 +29,7 @@
     }
 
     .showcase {
-        background-color: aqua;
+        background-color: gray;
         height: auto;
         width: auto;
         padding: 5%;
