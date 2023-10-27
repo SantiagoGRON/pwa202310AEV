@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import ErrorView from '../views/ErrorView.vue';
 import LoginView from '../views/LoginView.vue';
-import singInView from '../views/singInView.vue';
+import SingInView from '../views/SingInView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,7 +24,7 @@ const router = createRouter({
     {
       path: '/singIn',
       name: 'singIn',
-      component: singInView
+      component: SingInView
     },
   ]
 })
