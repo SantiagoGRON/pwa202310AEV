@@ -3,7 +3,7 @@ const {QueryTypes} = require('sequelize');
 
 class CommentsService{
     async createComment(body){
-        let sentence = `INSERT INTO comentarios(id_nombre,comen,correo_contacto,telefono)
+        let sentence = `INSERT INTO comentarios(id_nombre,comen,correo_contacto,telefono) 
         values('${body.id_nombre}','${body.comen}','${body.correo_contacto}','${telefono}')`;
         
         let genDataId = await objCon.query(

@@ -1,1 +1,1 @@
-CREATE database pwabd2023 CHARACTER SET utf8 COLLATE uft8_unicode_ci;
+CREATE database pwabd2023;
